@@ -2,9 +2,9 @@ FROM ubuntu:latest
 
 ENV LANG="en_US.UTF-8" \
     LANGUAGE="en_US.UTF-8" \
-    USER_NAME="root" \
-    PUID=1000 \
-    PGID=1000 \
+    USER_NAME="abc" \
+    PUID=1003 \
+    PGID=1003 \
 #    OPENVPN_USERNAME="" \
 #    OPENVPN_PASSWORD="" \
     OPENVPN_CONFIG_DIR="/etc/openvpn/custom" \
