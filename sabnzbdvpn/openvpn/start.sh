@@ -36,4 +36,4 @@ OPENVPN_CONFIG_PATH="$OPENVPN_CONFIG_DIR/$OPENVPN_CONFIG"
 #printf "USER=${USER_NAME}\nHOST=0.0.0.0\nPORT=8080\nCONFIG=${SABNZBD_CONFIG_DIR}\n" > /etc/default/sabnzbdplus \
 #/etc/init.d/sabnzbdplus start
 
-exec openvpn $CONTROL_OPTS $OPENVPN_OPTS --config "$OPENVPN_CONFIG_PATH"
+exec sudo openvpn $CONTROL_OPTS $OPENVPN_OPTS --config "$OPENVPN_CONFIG_PATH"
