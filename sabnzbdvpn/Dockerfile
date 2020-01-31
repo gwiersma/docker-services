@@ -44,4 +44,4 @@ EXPOSE 8080 8090
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 
-#CMD ["/etc/openvpn/start.sh"]
+CMD ["/etc/openvpn/start.sh"]
