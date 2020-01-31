@@ -27,11 +27,7 @@ RUN apt-get update \
     && groupmod -g 1000 users \
     && mkdir -p /home/${USER_NAME} \
     && useradd -u ${PUID} -U -d /home/${USER_NAME} -s /bin/false ${USER_NAME} \
-    && usermod -G users ${USER_NAME} \
-    && mkdir -p /dev/net \
-    && mknod /dev/net/tun c 10 200 \
-    && chown abc:1000 /dev/net/tun \
-    && chmod 777 /dev/net/tun
+    && usermod -G users ${USER_NAME} 
 
     # deprecated and modified from other github repo
     #&& printf "USER=root\nHOST=0.0.0.0\nPORT=8080\nCONFIG=/config\n" > /etc/default/sabnzbdplus \
