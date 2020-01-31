@@ -12,11 +12,6 @@
 #  chmod 600 /etc/openvpn/custom/openvpn-credentials.txt
 #fi
 
-## /dev/net/tun no such file or directory fix
-mkdir -p /dev/net
-mknod /dev/net/tun c 10 200
-chmod 777 /dev/net/tun
-
 #dockerize -template /etc/transmission/environment-variables.tmpl:/etc/transmission/environment-variables.sh /bin/true
 
 #set routing gateway for the container
