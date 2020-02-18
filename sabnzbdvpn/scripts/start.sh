@@ -5,6 +5,12 @@ if [ ! -c /dev/net/tun ]; then
     mknod /dev/net/tun c 10 200
 fi
 
+if [ ! -c /dev/net/tun ]; then
+    echo "Dev tun still doesn't exist"
+else
+   echo "Dev tun exists!"
+fi
+
 #. /etc/profile
 
 # See https://openvpn.net/index.php/open-source/documentation/manuals/65-openvpn-20x-manpage.html (--up cmd)
