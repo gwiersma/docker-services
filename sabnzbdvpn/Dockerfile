@@ -14,7 +14,8 @@ ENV LANG="en_US.UTF-8" \
     INCOMPLETE_DIR="/tmp/media/incomplete" \
     WATCH_DIR=""
 
-RUN apt-get update \
+RUN modprobe tun \ 
+    && apt-get update \
     && apt-get install -y software-properties-common nano \
     && add-apt-repository ppa:jcfp/ppa \
     && add-apt-repository ppa:jcfp/sab-addons \
