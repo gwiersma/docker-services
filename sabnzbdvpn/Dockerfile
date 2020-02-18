@@ -13,8 +13,6 @@ ENV LANG="en_US.UTF-8" \
     DOWNLOAD_DIR="/tmp/media/downloads" \
     INCOMPLETE_DIR="/tmp/media/incomplete" \
     WATCH_DIR=""
-    
-RUN modprobe tun
 
 RUN apt-get update \
     && apt-get install -y software-properties-common nano \
