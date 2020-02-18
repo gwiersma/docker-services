@@ -8,7 +8,7 @@ fi
 if [ ! -c /dev/net/tun ]; then
     echo "Dev tun still doesn't exist"
 else
-   echo "Dev tun exists!"
+    echo "Dev tun exists!"
 fi
 
 #. /etc/profile
